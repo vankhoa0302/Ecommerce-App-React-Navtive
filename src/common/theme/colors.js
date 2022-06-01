@@ -1,8 +1,10 @@
 export default {
-    primary: '#53B175',
+    primary: '#DB3022',
     secondary: '#414757',
     error: '#f13a59',
     notBlack: '#181725',
+    black:'#222222',
+    gray:'#9B9B9B',
     notGray: '#7C7C7C',
     gray: '#B3B3B3',
     notPink: '#FA8072',
@@ -16,6 +18,9 @@ export default {
     redBtn: '#FA3E1C',
     bottomBar: '#2D333B',
     lightGreyColor: 'rgba(0, 0, 0, 0.38)',
+    sale:'#DB3022',
+    succes:'#2AA952',
+    error:'#F01F0E',
   
     //new palette
     mRed: '#DD4040',

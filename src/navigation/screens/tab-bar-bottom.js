@@ -1,18 +1,18 @@
 import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import React, { useState } from 'react'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Router } from '../router';
-import Ionicons from 'react-native-vector-icons/Ionicons'
 import { HeightScreen, Theme } from '../../common/theme/theme';
 import TabBarIcon from '../components/tab-bar-icon';
 import HomeScreen from '../../screens/main';
 import DetailsScreen from '../../screens/cart';
 import FavoritesScreen from '../../screens/favorites';
-import ProfileScreen from '../../screens/profile';
-
-
+import Profile from '../../screens/profile';
+import HomeAuth from '../../features/auth/screens/home-auth';
 const Tab = createBottomTabNavigator();
 const TabBarBottom = () => {
+  // const {isLogin} = useSelector(state => state.auth);
+  const [isLogin, setIsLogin] = useState(false)
   return (
     <Tab.Navigator
         screenOptions={{
@@ -61,7 +61,7 @@ const TabBarBottom = () => {
         />
         <Tab.Screen
             name={Router.Profile}
-            component={ProfileScreen} 
+            component={isLogin ? Profile : HomeAuth} 
             options={{
                 tabBarIcon: ({color,focused}) => (
                   <TabBarIcon name={Router.Profile} focused={focused} />

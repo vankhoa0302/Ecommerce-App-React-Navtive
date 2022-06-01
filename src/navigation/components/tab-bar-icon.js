@@ -1,4 +1,4 @@
-import {Theme} from '../../common/theme/theme';
+import {Theme} from '@src/common/theme/theme';
 import React from 'react';
 import {Image, StyleSheet, Text, View} from 'react-native';
 import {Router} from '../router';
