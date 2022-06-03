@@ -2,8 +2,8 @@ export const Router = {
     BottomTabBar: 'BottomTabBar',
   
     // insight bottom tab bar
-    Shop: 'Shop',
-    Explore: 'Explore',
+    Home: 'Home',
+    Shop: 'Categories',
     Cart: 'Cart',
     Heart: 'Heart',
     Profile: 'Profile',

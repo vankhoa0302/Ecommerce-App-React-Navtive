@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import AppNavigation from './src/navigation';
+import ProductCard from './src/components/ProductCard';
 // import AppLoading from 'expo-app-loading';
 const App = () => {
 //   let [fontsLoaded] = useFonts({
@@ -19,6 +20,7 @@ const App = () => {
       <StatusBar style="auto" />
       <AppNavigation />
     </NavigationContainer>
+    // <ProductCard />
   );
 }
 

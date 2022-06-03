@@ -10,13 +10,14 @@ import {
 import { Theme } from '../common/theme/theme';
 import Header from './header';
 
-const Background = ({children, isButtonBack = false, relative = false}) => (
+const Background = ({children, isButtonBack,isButtonRight,style,title,pageName}) => (
   <View style={styles.background}>
     <Header
-      isBack={false}
-      isBorder={true}
-      isRight={false}
-      styleRoot={{backgroundColor: Theme.backgrounds.transparent}}
+      isBack={isButtonBack}
+      isRight={isButtonRight}
+      styleRoot={style}
+      title={title}
+      pageName={pageName}
     />
     <View style={styles.container}>
       {/* <KeyboardAvoidingView
@@ -25,7 +26,7 @@ const Background = ({children, isButtonBack = false, relative = false}) => (
       <View>
         <ScrollView showsVerticalScrollIndicator={false}>
           <View
-            style={{alignItems: 'center', justifyContent: 'center', flex: 1}}>
+            style={{ flex: 1}}>
             {children}
           </View>
         </ScrollView>

@@ -6,7 +6,7 @@ import {Router} from '../router';
 const TabBarIcon = ({name, focused, ...props}) => {
   return (
     <View style={styles.root}>
-      {name === Router.Shop && (
+      {name === Router.Home && (
         <Image
           source={
             focused

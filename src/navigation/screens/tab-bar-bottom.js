@@ -4,11 +4,11 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Router } from '../router';
 import { HeightScreen, Theme } from '../../common/theme/theme';
 import TabBarIcon from '../components/tab-bar-icon';
-import HomeScreen from '../../screens/main';
 import DetailsScreen from '../../screens/cart';
 import FavoritesScreen from '../../screens/favorites';
 import Profile from '../../screens/profile';
 import HomeAuth from '../../features/auth/screens/home-auth';
+import HomeScreen from '../../screens/home';
 const Tab = createBottomTabNavigator();
 const TabBarBottom = () => {
   // const {isLogin} = useSelector(state => state.auth);
@@ -31,12 +31,12 @@ const TabBarBottom = () => {
             }
       }}>
         <Tab.Screen
-            name={Router.Shop}
+            name={Router.Home}
             component={HomeScreen} 
             options={{
                 
                 tabBarIcon: ({color,focused}) => (
-                  <TabBarIcon name={Router.Shop} focused={focused} />
+                  <TabBarIcon name={Router.Home} focused={focused} />
                 ),
               }}
         />
