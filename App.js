@@ -16,10 +16,10 @@ const App = () => {
 // }
 
   return (
-    <NavigationContainer>
-      <StatusBar style="auto" />
-      <AppNavigation />
-    </NavigationContainer>
+    // <NavigationContainer>
+    //   <StatusBar style="auto" />
+    //   <AppNavigation />
+    // </NavigationContainer>
     // <ProductCard />
   );
 }
