@@ -4,13 +4,12 @@ import { Theme } from '../../common/theme/theme'
 
 
 
-
-
+const labels = {
+    new : {bg:Theme.colors.black,text:'new'},
+    sale : {bg:Theme.colors.sale,text:'20'}
+}
 const Label = ({isNew = false, isSale = false,discount}) => {
-    const labels = {
-        new : {bg:Theme.colors.black,text:'new'},
-        sale : {bg:Theme.colors.sale,text:discount}
-    }
+
     const [label,setLabel] = useState(labels)
     // const [label,setLabel] = useState(labels)
     useEffect(() =>{
@@ -54,6 +53,6 @@ const styles = StyleSheet.create({
         fontSize:Theme.size.small,
         textTransform:'uppercase',
         textAlign:'center',
-        color: Theme.backgrounds.white,
+        color: Theme.colors.white,
     }
 })

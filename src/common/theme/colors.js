@@ -21,6 +21,8 @@ export default {
     sale:'#DB3022',
     succes:'#2AA952',
     error:'#F01F0E',
+    white: '#FFFFFF',
+    background:"#F9F9F9",
   
     //new palette
     mRed: '#DD4040',

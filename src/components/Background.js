@@ -40,7 +40,7 @@ const Background = ({children, isButtonBack,isButtonRight,style,title,pageName})
 const styles = StyleSheet.create({
   background: {
     flex: 1,
-    backgroundColor: Theme.backgrounds.white,
+    backgroundColor: Theme.colors.background,
     paddingTop: Platform.OS === 'ios' ? 44 : 0,
   },
   container: {

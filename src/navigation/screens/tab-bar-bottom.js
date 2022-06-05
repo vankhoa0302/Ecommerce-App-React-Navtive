@@ -19,13 +19,12 @@ const TabBarBottom = () => {
             headerShown:false,
             tabBarShowLabel:false,
             tabBarStyle:{
-                backgroundColor:Theme.backgrounds.white,
+                backgroundColor:Theme.colors.white,
                 paddingBottom:15,
                 paddingVertical:10,
                 height:HeightScreen *0.09,
                 borderTopEndRadius: 25,
                 borderTopStartRadius: 25,
-                position: 'absolute',
                 paddingHorizontal: 8,
                 shadowOpacity: 0.15,
             }
