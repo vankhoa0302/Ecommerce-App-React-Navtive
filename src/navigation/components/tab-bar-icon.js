@@ -16,6 +16,16 @@ const TabBarIcon = ({name, focused, ...props}) => {
           style={{width: 30, height: 25, resizeMode: 'contain'}}
         />
       )}
+      {name === Router.Shop && (
+        <Image
+          source={
+            focused
+              ? require('../../assets/images/icons/search-active.png')
+              : require('../../assets/images/icons/search.png')
+          }
+          style={{width: 30, height: 25, resizeMode: 'contain'}}
+        />
+      )}
       {name === Router.Heart && (
         <Image
           source={

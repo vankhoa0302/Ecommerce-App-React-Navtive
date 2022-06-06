@@ -3,7 +3,7 @@ export const Router = {
   
     // insight bottom tab bar
     Home: 'Home',
-    Shop: 'Categories',
+    Shop: 'Shop',
     Cart: 'Cart',
     Heart: 'Heart',
     Profile: 'Profile',

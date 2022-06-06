@@ -6,18 +6,18 @@ import {
   View,
   ScrollView,
   Platform,
+  SafeAreaView
 } from 'react-native';
 import { Theme } from '../common/theme/theme';
 import Header from './header';
 
-const Background = ({children, isButtonBack,isButtonRight,style,title,pageName}) => (
-  <View style={styles.background}>
+const Background = ({children, isButtonBack,isButtonRight,style,midHeader}) => (
+  <SafeAreaView style={styles.background}>
     <Header
       isBack={isButtonBack}
       isRight={isButtonRight}
       styleRoot={style}
-      title={title}
-      pageName={pageName}
+      midHeader={midHeader}
     />
     <View style={styles.container}>
       {/* <KeyboardAvoidingView
@@ -34,14 +34,13 @@ const Background = ({children, isButtonBack,isButtonRight,style,title,pageName})
       {/* </KeyboardAvoidingView> */}
     </View>
     {/* {isButtonBack ? <ButtonBack navigation={navigation} /> : <></>} */}
-  </View>
+  </SafeAreaView>
 );
 
 const styles = StyleSheet.create({
   background: {
     flex: 1,
     backgroundColor: Theme.colors.background,
-    paddingTop: Platform.OS === 'ios' ? 44 : 0,
   },
   container: {
     flex: 1,

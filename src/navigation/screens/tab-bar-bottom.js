@@ -9,6 +9,7 @@ import FavoritesScreen from '../../screens/favorites';
 import Profile from '../../screens/profile';
 import HomeAuth from '../../features/auth/screens/home-auth';
 import HomeScreen from '../../screens/home';
+import ShopScreen from '../../screens/shop';
 const Tab = createBottomTabNavigator();
 const TabBarBottom = () => {
   // const {isLogin} = useSelector(state => state.auth);
@@ -39,14 +40,14 @@ const TabBarBottom = () => {
                 ),
               }}
         />
-        <Tab.Screen
-            name={Router.Cart}
-            component={DetailsScreen} 
-            options={{
-                tabBarIcon: ({color,focused}) => (
-                  <TabBarIcon name={Router.Cart} focused={focused} />
-                ),
-                }}
+          <Tab.Screen
+          name={Router.Shop}
+          component={ShopScreen} 
+          options={{      
+              tabBarIcon: ({color,focused}) => (
+                <TabBarIcon name={Router.Shop} focused={focused} />
+              ),
+            }}
         />
         <Tab.Screen
           name={Router.Heart}
@@ -57,6 +58,15 @@ const TabBarBottom = () => {
                 <TabBarIcon name={Router.Heart} focused={focused} />
               ),
             }}
+        />
+        <Tab.Screen
+            name={Router.Cart}
+            component={DetailsScreen} 
+            options={{
+                tabBarIcon: ({color,focused}) => (
+                  <TabBarIcon name={Router.Cart} focused={focused} />
+                ),
+                }}
         />
         <Tab.Screen
             name={Router.Profile}

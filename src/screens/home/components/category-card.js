@@ -1,6 +1,6 @@
 import { StyleSheet, Text, TouchableOpacity, View,Image } from 'react-native'
 import React from 'react'
-import { Theme } from '../../common/theme'
+import { Theme } from '../../../common/theme'
 
 const CategoryCard = ({item}) => {
   return (
