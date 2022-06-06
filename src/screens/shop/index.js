@@ -9,10 +9,6 @@ import SaleBanner from './components/sale-banner'
 
 
 
-
-
-
-
 const renderCategory = () =>{
   return(
     <View style={{flex:1}}>

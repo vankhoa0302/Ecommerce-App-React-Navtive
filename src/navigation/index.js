@@ -6,6 +6,7 @@ import TabBarBottom from './screens/tab-bar-bottom';
 import Login from '../features/auth/screens/home-auth/login';
 import Register from '../features/auth/screens/home-auth/register';
 import ForgotPassword from '../features/auth/screens/home-auth/forgot-password';
+import ProductScreen from '../components/product-screen';
 
 
 
@@ -28,6 +29,7 @@ const AppNavigation = () => {
         {name: Router.Login, component: Login},
         {name: Router.Register, component: Register},
         {name: Router.ForgotPassword, component: ForgotPassword},
+        {name: Router.ProductScreen, component: ProductScreen},
       ].map(stack => {
         return (
           <Stack.Screen

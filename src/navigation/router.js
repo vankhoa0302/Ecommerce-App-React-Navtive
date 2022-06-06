@@ -5,7 +5,7 @@ export const Router = {
     Home: 'Home',
     Shop: 'Shop',
     Cart: 'Cart',
-    Heart: 'Heart',
+    Heart: 'Favorite',
     Profile: 'Profile',
     HomeAuth: 'HomeAuth',
   
@@ -15,6 +15,28 @@ export const Router = {
     ForgotPassword: 'ForgotPassword',
   
     // explore
-    ExploreScreen: 'ExploreScreen',
+    Search: 'SearchScreen',
+
+    //Category
+    Women:  'Women',
+    Man:  'Man',
+    Kids:  'Kids',
+    Accessories:  'Accessories',
+
+
+    //Product
+    ProductScreen: 'ProductScreen',
+
+    //Sub category
+    //Woman
+    Dresses: 'Dresses',
+    TShirt:'T-Shirt',
+    Pants:'Pants',
+    Shoes:'Shoes',
+    //Man
+    Sults: 'Sults',
+    TShirt:'T-Shirt',
+    Pants:'Pants',
+    Shoes:'Shoes',
   };
   

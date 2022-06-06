@@ -1,6 +1,6 @@
 import { Image, StyleSheet, Text, View,TouchableOpacity } from 'react-native'
 import React from 'react'
-import { Theme } from '../../common/theme/theme'
+import { HeightScreen, Theme, WidthScreen } from '../../common/theme/theme'
 import Label from './label'
 import Love from './love-btn'
 
@@ -47,8 +47,8 @@ const styles = StyleSheet.create({
         marginRight:20,
     },
     cardImage:{
-        height: 280,
-        width: 230,
+        height: (HeightScreen-60)/3,
+        width: (WidthScreen-60)/2,
         borderRadius:12,
         marginBottom:10,
     },

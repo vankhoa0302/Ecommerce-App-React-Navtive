@@ -22,25 +22,27 @@ const Header = ({
 }) => {
   const navigation = useNavigation();
   return (
-    <View style={styles.container}>
-        <View style={[styles.root, styleRoot]}>
+    <View style={[styles.container,styleRoot]}>
+        <View style={{flex:1}}>
           {isBack && (
           <TouchableOpacity
+            style={{alignItems:'flex-start'}}
             onPress={() => {
               navigation.goBack();
             }}>
-
                 <Icon
                   name="chevron-back-outline"
                   size={25}
                   color={Theme.colors.black}
                 />
-
           </TouchableOpacity>
           )}
-        <View style={{alignSelf:'flex-end'}}>
+          </View>
+        <View style={{flex:1,alignItems:'center'}}>
           {midHeader}
         </View>
+
+        <View style={{flex:1}}>
           {isRight && (
           <TouchableOpacity onPress={() => navigation.navigate(Router.Cart)} style={{alignItems:'flex-end'}}>
             <Image source={require('../assets/images/icons/cart-active.png')} style ={{height:25, width:30, resizeMode:'contain'}} />
@@ -56,16 +58,12 @@ export default Header;
 
 const styles = StyleSheet.create({
   container:{
-    
     marginHorizontal:10,
     marginVertical:20,
-    backgroundColor: Theme.backgrounds.white,
+    backgroundColor: Theme.backgrounds.transparent,
+    flexDirection:'row',
+    alignItems:'center',
   },  
-  root: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    width: '100%',
-  },
   pageName:{
     fontSize: Theme.size.h2,
     color:Theme.colors.black,

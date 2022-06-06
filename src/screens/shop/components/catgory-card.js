@@ -2,10 +2,12 @@ import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 import { Theme } from '../../../common/theme'
 import Ionicons from 'react-native-vector-icons/Ionicons'
-
+import { useNavigation } from '@react-navigation/native'
+import { Router } from '../../../navigation/router'
 const CategoryCard= ({item}) => {
+  const navigation = useNavigation();
   return (
-    <TouchableOpacity style={styles.container} activeOpacity={0.5} onPress={()=>{}}>
+    <TouchableOpacity style={styles.container} activeOpacity={0.5} onPress={()=>{navigation.navigate(Router.ProductScreen,item.categoryName)}}>
       <View style={styles.root} >
           <Image style={{
                 height:60,
