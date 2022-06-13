@@ -64,6 +64,7 @@ const styles = StyleSheet.create({
     backgroundColor: Theme.backgrounds.transparent,
     flexDirection:'row',
     alignItems:'center',
+    zIndex:1,
   },  
   pageName:{
     fontSize: Theme.size.h2,

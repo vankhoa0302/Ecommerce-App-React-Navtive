@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import AppNavigation from './src/navigation';
 import { useFonts } from 'expo-font';
-import { Theme } from './src/common/theme';
+import ProductDetail from './src/screens/ProductDetail';
 
 const App = () => {
   const [loaded, error] = useFonts({'RobotoBold': require('./src/assets/fonts/Cabin-Bold.ttf')});
@@ -13,9 +13,10 @@ const App = () => {
   return (
     <NavigationContainer>
       <StatusBar style="auto" />
-      <AppNavigation />
+      {/* <AppNavigation /> */}
+      <ProductDetail />
+
     </NavigationContainer>
-    // <ProductCard />
   );
 }
 

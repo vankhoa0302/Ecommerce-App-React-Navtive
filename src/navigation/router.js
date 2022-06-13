@@ -24,8 +24,11 @@ export const Router = {
     Accessories:  'Accessories',
 
 
-    //Product
-    ProductScreen: 'ProductScreen',
+    //Catalog
+    Catalog: 'Catalog',
+
+    //ProductDetail
+    ProductDetail:'ProductDetail',
 
     //Sub category
     //Woman

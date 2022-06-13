@@ -6,35 +6,42 @@ import {
   View,
   ScrollView,
   Platform,
-  SafeAreaView
+  SafeAreaView,
+  Text
 } from 'react-native';
 import { Theme } from '../common/theme/theme';
+import Button from './Button';
 import Header from './header';
 
-const Background = ({children, isButtonBack,isButtonRight,style,midHeader}) => (
-  <SafeAreaView style={styles.background}>
-    <Header
-      isBack={isButtonBack}
-      isRight={isButtonRight}
-      styleRoot={style}
-      midHeader={midHeader}
-    />
-    <View style={styles.container}>
-      {/* <KeyboardAvoidingView
-        behavior="position"
-        keyboardVerticalOffset={Platform.OS === 'ios' ? 40 : 0}> */}
-      <View>
-        <ScrollView showsVerticalScrollIndicator={false}>
-          <View
-            style={{ flex: 1}}>
-            {children}
-          </View>
-        </ScrollView>
+const Background = ({
+    children, 
+    isButtonBack,
+    isButtonRight,
+    style,
+    midHeader,
+  }) => (
+    <SafeAreaView style={styles.background}>
+      <Header
+        isBack={isButtonBack}
+        isRight={isButtonRight}
+        styleRoot={style}
+        midHeader={midHeader}
+      />
+      <View style={styles.container}>
+        {/* <KeyboardAvoidingView
+          behavior="position"
+          keyboardVerticalOffset={Platform.OS === 'ios' ? 40 : 0}> */}
+        <View>
+          <ScrollView showsVerticalScrollIndicator={false}>
+            <View
+              style={{ flex: 1}}>
+              {children}
+            </View>
+          </ScrollView>
+        </View>
+        {/* </KeyboardAvoidingView> */}
       </View>
-      {/* </KeyboardAvoidingView> */}
-    </View>
-    {/* {isButtonBack ? <ButtonBack navigation={navigation} /> : <></>} */}
-  </SafeAreaView>
+    </SafeAreaView>
 );
 
 const styles = StyleSheet.create({
@@ -48,6 +55,16 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
     justifyContent: 'center',
   },
+  footer:{
+    width: '90%',
+    alignSelf: 'center',
+    justifyContent: 'center',
+    marginBottom:18,
+    marginTop:10,
+  },
+  text:{
+    color:Theme.colors.white,
+  }
 });
 
 export default memo(Background);

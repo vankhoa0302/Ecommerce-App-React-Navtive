@@ -8,7 +8,7 @@ import Header from './header'
 import { Router } from '../navigation/router'
 import { useFonts } from 'expo-font';
 
-const ProductScreen = () => {
+const Catalog = () => {
     const route = useRoute();
     const navigation = useNavigation();
     const [loaded, error] = useFonts({RobotoBold: require('../assets/fonts/Cabin-Bold.ttf')});
@@ -32,7 +32,7 @@ const ProductScreen = () => {
   )
 }
 
-export default ProductScreen
+export default Catalog
 
 const styles = StyleSheet.create({
     background: {

@@ -8,7 +8,7 @@ const CategoryCard = ({item}) => {
   const navigation = useNavigation();
 
   return (
-    <TouchableOpacity style={styles.root} activeOpacity={0.5} onPress={()=>{navigation.navigate(Router.ProductScreen,item.categoryName)}}>
+    <TouchableOpacity style={styles.root} activeOpacity={0.5} onPress={()=>{navigation.navigate(Router.Catalog,item.categoryName)}}>
         <View style={styles.cardImage}>
             <Image 
                 style={styles.image}

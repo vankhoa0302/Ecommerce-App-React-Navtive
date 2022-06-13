@@ -7,7 +7,7 @@ import { Router } from '../../../navigation/router'
 const CategoryCard= ({item}) => {
   const navigation = useNavigation();
   return (
-    <TouchableOpacity style={styles.container} activeOpacity={0.5} onPress={()=>{navigation.navigate(Router.ProductScreen,item.categoryName)}}>
+    <TouchableOpacity style={styles.container} activeOpacity={0.5} onPress={()=>{navigation.navigate(Router.Catalog,item.categoryName)}}>
       <View style={styles.root} >
           <Image style={{
                 height:60,
