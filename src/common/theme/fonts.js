@@ -31,7 +31,7 @@ export const size = {
     Comfortaa: 'Comfortaa',
     FiraSansExtraLight: 'FiraSans-ExtraLight',
     FiraSansMedium: 'FiraSansMedium',
-    RobotoBold: 'Roboto-Bold',
+    RobotoBold: require('../../assets/fonts/Roboto-Bold.ttf'),
     RobotoLight: 'Roboto-Light',
     RobotoMedium: 'Roboto-Medium',
     SourceSansProLight: 'SourceSansPro-Light',

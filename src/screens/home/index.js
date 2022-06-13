@@ -9,7 +9,8 @@ import { arrCategory } from '../../datas/category';
 import ListProduct from '../../components/product/list-product';
 import { arrProduct } from '../../datas/product';
 
-
+import { useNavigation } from '@react-navigation/native';
+import { Router } from '../../navigation/router';
 
 
 const arrTitle =[
@@ -25,9 +26,10 @@ const arrTitle =[
   }
 ]
 const renderCategory = () =>{
+  const navigation = useNavigation();
     return(
       <View style={{marginVertical:20}}>
-          <ProductTitle title= 'Categories'/>
+          <ProductTitle title= 'Categories' onPress ={()=>navigation.navigate(Router.Shop)}/>
           <FlatList 
             horizontal={true}
             showsHorizontalScrollIndicator={false}

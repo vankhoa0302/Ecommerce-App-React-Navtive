@@ -13,6 +13,7 @@ import Icon from 'react-native-vector-icons/Ionicons';
 import {useNavigation} from '@react-navigation/native';
 import { Theme } from '../common/theme/theme';
 import { Router } from '../navigation/router';
+
 const Header = ({
   midHeader,
   isBack,
@@ -67,6 +68,7 @@ const styles = StyleSheet.create({
   pageName:{
     fontSize: Theme.size.h2,
     color:Theme.colors.black,
-    fontWeight:'bold'
+    fontWeight:'bold',
+    fontFamily:'RobotoBold'
   }
 });

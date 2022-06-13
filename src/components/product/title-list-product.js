@@ -1,8 +1,9 @@
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 import { Theme } from '../../common/theme'
-
+import { useNavigation } from '@react-navigation/native'
 const ProductTitle = ({title,subTitle,onPress, ...props}) => {
+    
   return (
     <View style = {styles.root}>
         <View>
@@ -20,7 +21,7 @@ const ProductTitle = ({title,subTitle,onPress, ...props}) => {
                 >{subTitle}</Text>
         </View>
         <TouchableOpacity onPress={onPress}>
-            <Text style={styles.text}>View all</Text>
+            <Text style={styles.text} >View all</Text>
         </TouchableOpacity>
     </View>
   )
