@@ -6,22 +6,21 @@ import { useRoute,useNavigation } from '@react-navigation/native'
 import { Theme } from '../common/theme'
 import Header from './header'
 import { Router } from '../navigation/router'
+import StyledText from './StyledText'
 import { useFonts } from 'expo-font';
+
+
 
 const Catalog = () => {
     const route = useRoute();
     const navigation = useNavigation();
-    const [loaded, error] = useFonts({RobotoBold: require('../assets/fonts/Cabin-Bold.ttf')});
-    if (!loaded) {
-      return null;
-    }
   return (
       <SafeAreaView style={styles.background}>
           <View style={styles.container}>
             <Header 
                 isBack={true}
                 isRight={true}
-                midHeader={<Text style={{fontFamily:'RobotoBold'}}>{route.params}</Text>}
+                midHeader={<StyledText isTitle={true} content={route.params} style={{fontStyle:'italic'}} />}
                 >
             </Header>
             <ListProduct arrProduct={arrProduct} isHome ={false} />
